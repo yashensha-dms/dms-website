@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  /* Canvas */
+  --color-bg:            #FFFFFF;
+  --color-bg-secondary:  #F8FAFC;
+  --color-bg-subtle:     #F1F5F9;
+  --color-bg-dark:       #030712;
+
+  /* Primary Action: Electric Cobalt Blue */
+  --color-brand:         #0052FF;
+  --color-brand-hover:   #0043CC;
+  --color-button-dark:   #030712;
+
+  /* Tech Accent: Electric Cobalt Blue */
+  --color-accent:        #0052FF;
+  --color-accent-hover:  #0043CC;
+  --color-accent-subtle: #EFF6FF;
+  --color-accent-glow:   rgba(0, 82, 255, 0.12);
+
+  /* Status and Signal */
+  --color-green:         #22C55E;
+  --color-red:           #EF4444;
+
+  /* Text Typography */
+  --color-text:          #0F172A;
+  --color-text-muted:    #64748B;
+  --color-text-subtle:   #94A3B8;
+  --color-text-inverse:  #F8FAFC;
+
+  /* Borders and Dividers */
+  --color-border:        #E2E8F0;
+  --color-border-hover:  #94A3B8;
+  --color-border-accent: #BFDBFE;
+}
+
+@theme {
+  --color-bg: var(--color-bg);
+  --color-bg-secondary: var(--color-bg-secondary);
+  --color-bg-subtle: var(--color-bg-subtle);
+  --color-bg-dark: var(--color-bg-dark);
+
+  --color-brand: var(--color-brand);
+  --color-brand-hover: var(--color-brand-hover);
+  --color-button-dark: var(--color-button-dark);
+
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-accent-subtle: var(--color-accent-subtle);
+  --color-accent-glow: var(--color-accent-glow);
+
+  --color-green: var(--color-green);
+  --color-red: var(--color-red);
+
+  --color-text: var(--color-text);
+  --color-text-muted: var(--color-text-muted);
+  --color-text-subtle: var(--color-text-subtle);
+  --color-text-inverse: var(--color-text-inverse);
+
+  --color-border: var(--color-border);
+  --color-border-hover: var(--color-border-hover);
+  --color-border-accent: var(--color-border-accent);
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Continuous Logo Marquee */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+  will-change: transform;
+}
+
+/* Subtle Dotted Matrix Texture */
+.bg-dotted-grid {
+  background-image: radial-gradient(rgba(148, 163, 184, 0.25) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Architectural Corner Notch Marker */
+.notch-accent {
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
