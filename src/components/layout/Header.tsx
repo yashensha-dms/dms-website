@@ -176,7 +176,7 @@ export function Header() {
             : "border-b border-slate-200/80"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 h-18 sm:h-20 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
           {/* 1. Left: Official Brand Logo (Vector SVG) */}
           <div className="flex items-center shrink-0">
             <Link
@@ -190,7 +190,7 @@ export function Header() {
                 width={136}
                 height={26}
                 priority
-                className="h-6 sm:h-7 w-auto object-contain"
+                className="h-6 w-auto object-contain"
               />
             </Link>
           </div>

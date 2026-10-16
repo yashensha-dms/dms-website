@@ -16,21 +16,21 @@ const DISCIPLINES: Discipline[] = [
     number: "01",
     title: "Brand Systems",
     description:
-      "We build the visual foundation your company stands on. Logo, guidelines, typography, color, and design tokens that scale from a business card to a full software interface.",
+      "The visual foundation of your company. Logo, guidelines, typography, color, and design tokens, built to hold from a business card to a software interface.",
   },
   {
     id: "product",
     number: "02",
     title: "Digital Products",
     description:
-      "Websites, web applications, mobile backends, e-commerce systems, APIs, and admin panels. Custom built, production ready, handed over with full documentation.",
+      "Websites, web applications, mobile backends, e-commerce, APIs, and admin panels. Built to your needs, ready for production, delivered with full documentation.",
   },
   {
     id: "infra",
     number: "03",
     title: "Operations Infrastructure",
     description:
-      "CRM configuration and infrastructure set up on your own server. You own it. You control it. We configure it, document it, and hand over the keys.",
+      "CRM and infrastructure on your own server. You own it and control it. We set it up, document it, and hand you the keys.",
   },
 ];
 
@@ -39,12 +39,12 @@ export function WhatWeDo() {
   const activeDiscipline = DISCIPLINES[selectedIndex];
 
   return (
-    <section className="w-full bg-[#FFFFFF] min-h-[100dvh] mt-18 sm:mt-20 scroll-mt-18 sm:scroll-mt-20 flex flex-col justify-center py-8 sm:py-12 md:py-16">
-      <div className="w-full max-w-7xl mx-auto px-6 flex-1 flex flex-col justify-center">
-        {/* Desktop: Zero border-radius, full-section architectural split layout */}
-        <div className="hidden lg:grid lg:grid-cols-12 gap-12 xl:gap-20 items-stretch min-h-[520px]">
-          {/* Left Column: Sharp architectural selector list */}
-          <div className="lg:col-span-5 flex flex-col justify-center border-r border-[#E2E8F0] pr-10 xl:pr-14">
+    <section className="w-full bg-[#FFFFFF] min-h-[100dvh] flex flex-col">
+      <div className="w-full flex-1 flex flex-col h-full">
+        {/* Desktop: Zero border-radius, 50/50 architectural split layout */}
+        <div className="hidden lg:grid lg:grid-cols-2 items-stretch h-full flex-1">
+          {/* Left Column: Sharp architectural selector list (50%) */}
+          <div className="flex flex-col justify-center border-r border-[#E2E8F0] h-full">
             <div className="divide-y divide-[#E2E8F0] border-y border-[#E2E8F0] w-full">
               {DISCIPLINES.map((discipline, index) => {
                 const isSelected = selectedIndex === index;
@@ -55,22 +55,13 @@ export function WhatWeDo() {
                     type="button"
                     onClick={() => setSelectedIndex(index)}
                     onMouseEnter={() => setSelectedIndex(index)}
-                    className={`w-full text-left py-8 px-6 transition-all duration-200 cursor-pointer select-none group flex items-center justify-between rounded-none border-l-2 ${
+                    className={`w-full text-left py-6 px-8 sm:px-12 lg:px-16 transition-all duration-200 cursor-pointer select-none group flex items-center justify-between rounded-none border-l-2 ${
                       isSelected
                         ? "bg-[#F8FAFC] border-l-[#0052FF]"
                         : "bg-transparent hover:bg-slate-50/60 border-l-transparent"
                     }`}
                   >
-                    <div className="flex items-center gap-6">
-                      <span
-                        className={`text-sm uppercase tracking-[0.08em] font-sans tabular-nums transition-colors ${
-                          isSelected
-                            ? "text-[#0052FF] font-semibold"
-                            : "text-slate-400 group-hover:text-slate-600 font-normal"
-                        }`}
-                      >
-                        {discipline.number}
-                      </span>
+                    <div className="flex items-center gap-2">
                       <span
                         className={`text-2xl xl:text-3xl font-semibold tracking-[-0.02em] font-sans transition-colors ${
                           isSelected
@@ -81,23 +72,14 @@ export function WhatWeDo() {
                         {discipline.title}
                       </span>
                     </div>
-
-                    <span
-                      className={`w-2 h-2 rounded-full transition-all duration-200 ${
-                        isSelected
-                          ? "bg-[#0052FF] scale-100"
-                          : "bg-transparent scale-0"
-                      }`}
-                      aria-hidden="true"
-                    />
                   </button>
                 );
               })}
             </div>
           </div>
 
-          {/* Right Column: Free, dominating open area with zero card wrappers */}
-          <div className="lg:col-span-7 flex flex-col justify-center pl-4 xl:pl-8 py-6">
+          {/* Right Column: Free, dominating open area (50%) */}
+          <div className="flex flex-col justify-center pl-8 sm:pl-12 lg:pl-16 pr-8 sm:pr-12 lg:pr-16 h-full">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeDiscipline.id}
@@ -105,17 +87,17 @@ export function WhatWeDo() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -16 }}
                 transition={{ duration: 0.25, ease: "easeOut" }}
-                className="flex flex-col justify-center max-w-2xl"
+                className="flex flex-col justify-center max-w-xl"
               >
                 <span className="text-xs uppercase tracking-[0.14em] font-medium text-[#0052FF] font-sans tabular-nums select-none">
                   {activeDiscipline.number}
                 </span>
 
-                <h2 className="mt-5 text-4xl sm:text-6xl md:text-7xl xl:text-[80px] font-bold text-[#0F172A] tracking-[-0.035em] leading-[0.98] font-sans text-balance">
+                <h2 className="mt-5 text-4xl sm:text-5xl md:text-6xl xl:text-[68px] font-bold text-[#0F172A] tracking-[-0.035em] leading-[1.02] font-sans text-balance">
                   {activeDiscipline.title}
                 </h2>
 
-                <p className="mt-8 text-xl sm:text-2xl md:text-[26px] font-normal leading-[1.5] text-[#64748B] font-sans">
+                <p className="mt-6 text-lg sm:text-xl md:text-2xl font-normal leading-[1.5] text-[#64748B] font-sans">
                   {activeDiscipline.description}
                 </p>
               </motion.div>
@@ -124,7 +106,7 @@ export function WhatWeDo() {
         </div>
 
         {/* Mobile & Tablet: Free, open architectural stacked view (zero border-radius) */}
-        <div className="lg:hidden flex flex-col divide-y divide-[#E2E8F0] border-y border-[#E2E8F0]">
+        <div className="lg:hidden flex flex-col divide-y divide-[#E2E8F0] border-y border-[#E2E8F0] px-6 py-12">
           {DISCIPLINES.map((discipline) => (
             <div key={discipline.id} className="py-10 flex flex-col">
               <span className="text-xs uppercase tracking-[0.12em] font-medium text-[#0052FF] font-sans tabular-nums select-none">

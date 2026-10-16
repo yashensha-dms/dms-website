@@ -14,31 +14,31 @@ const STEPS: Step[] = [
     number: "01",
     title: "Scoping Session",
     description:
-      "A zero-cost call to understand what you need and whether we are the right fit.",
+      "A free call to understand what you need, and whether we are the right fit.",
   },
   {
     number: "02",
     title: "Proposal",
     description:
-      "Fixed scope, clear deliverables, milestone timeline. Delivered within 48 hours.",
+      "Fixed scope, clear deliverables, a milestone timeline. Within 48 hours.",
   },
   {
     number: "03",
     title: "Kickoff",
     description:
-      "Work begins after contract and advance. No ambiguity, no open billing.",
+      "We start once the contract is signed and the advance is paid. No ambiguity, no open-ended billing.",
   },
   {
     number: "04",
     title: "Build",
     description:
-      "Sprint delivery with daily staging updates. You review in real time through a shared channel.",
+      "Delivered in sprints, with daily staging updates. You review in real time in a shared channel.",
   },
   {
     number: "05",
     title: "Handoff",
     description:
-      "Full source code, IP ownership, credentials, and documentation. Everything transferred, nothing held back.",
+      "Source code, IP ownership, credentials, and documentation. All of it transferred, nothing held back.",
   },
 ];
 
@@ -57,7 +57,7 @@ export function HowWeWork() {
           className="max-w-3xl mb-16 md:mb-20"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-[-0.03em] text-[#0F172A] font-sans leading-[1.08]">
-            From first conversation to final handoff.
+            Five steps. First conversation to final handoff.
           </h2>
         </motion.div>
 

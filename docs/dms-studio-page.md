@@ -24,7 +24,7 @@ One page. No noise. Let them self-select.
 Brand, product, and infrastructure. One studio.
 
 **Subheadline:**
-We design brand systems, build digital products, and engineer the infrastructure that runs your business. One team. One brief. One outcome.
+We design your brand system, build your digital product, and set up the infrastructure beneath it. One team. One brief. One outcome.
 
 **CTA:** Start a Conversation
 
@@ -43,12 +43,11 @@ We design brand systems, build digital products, and engineer the infrastructure
 
 **Layout:** Full-width dark section. Centered editorial paragraph. Nothing else.
 
-**Copy:**
-Most companies juggle three vendors to do what one studio should.
+**Title:**
+Three vendors for one job.
 
-A branding agency that never talks to the developer. A developer who ignores the brand. A hosting setup nobody fully understands. Three invoices, zero accountability, and a product that feels like it was built by strangers.
-
-DMS Studio is the other kind. Brand systems, digital products, and operations infrastructure under one roof. The same people from first brief to final handoff.
+**Body:**
+Brand goes to one agency, code to another, hosting to a third. Nobody sees the whole. Three invoices, no one accountable, and a result that never quite fits together. DMS Studio works the other way. Brand systems, digital products, and operations infrastructure, made by one team from first brief to final handoff.
 
 **Design Notes:**
 - Background: `#030712`
@@ -69,19 +68,19 @@ DMS Studio is the other kind. Brand systems, digital products, and operations in
 
 **Card 1: Brand Systems**
 
-We build the visual foundation your company stands on. Logo, guidelines, typography, color, and design tokens that scale from a business card to a full software interface.
+The visual foundation of your company. Logo, guidelines, typography, color, and design tokens, built to hold from a business card to a software interface.
 
 ---
 
 **Card 2: Digital Products**
 
-Websites, web applications, mobile backends, e-commerce systems, APIs, and admin panels. Custom built, production ready, handed over with full documentation.
+Websites, web applications, mobile backends, e-commerce, APIs, and admin panels. Built to your needs, ready for production, delivered with full documentation.
 
 ---
 
 **Card 3: Operations Infrastructure**
 
-CRM configuration and infrastructure set up on your own server. You own it. You control it. We configure it, document it, and hand over the keys.
+CRM and infrastructure on your own server. You own it and control it. We set it up, document it, and hand you the keys.
 
 ---
 
@@ -102,24 +101,24 @@ CRM configuration and infrastructure set up on your own server. You own it. You 
 **Layout:** Five numbered steps. Horizontal on desktop, vertical on mobile. Sparse.
 
 **Headline:**
-From first conversation to final handoff.
+Five steps. First conversation to final handoff.
 
 **Steps:**
 
 1. Scoping Session
-A zero-cost call to understand what you need and whether we are the right fit.
+A free call to understand what you need, and whether we are the right fit.
 
 2. Proposal
-Fixed scope, clear deliverables, milestone timeline. Delivered within 48 hours.
+Fixed scope, clear deliverables, a milestone timeline. Within 48 hours.
 
 3. Kickoff
-Work begins after contract and advance. No ambiguity, no open billing.
+We start once the contract is signed and the advance is paid. No ambiguity, no open-ended billing.
 
 4. Build
-Sprint delivery with daily staging updates. You review in real time through a shared channel.
+Delivered in sprints, with daily staging updates. You review in real time in a shared channel.
 
 5. Handoff
-Full source code, IP ownership, credentials, and documentation. Everything transferred, nothing held back.
+Source code, IP ownership, credentials, and documentation. All of it transferred, nothing held back.
 
 **Design Notes:**
 - Background: `#F8FAFC`
@@ -141,19 +140,19 @@ Straight answers.
 **Questions:**
 
 Q: Who works on my project?
-A: You work directly with the person building it. No outsourcing, no junior handoffs. The same senior team from brief to delivery.
+A: The person building it. No outsourcing, no junior handoffs. The same senior team, from brief to delivery.
 
 Q: Do you publish pricing?
 A: No. Every project is scoped after a conversation. Pricing reflects requirements, not geography.
 
 Q: How fast can we start?
-A: Most projects kick off within 10 business days of contract signing.
+A: Most projects start within 10 business days of signing.
 
 Q: Who owns the code and assets?
-A: You do. Full IP transfer on every engagement, no exceptions.
+A: You do. Every engagement includes full IP transfer, without exception.
 
 Q: Can we engage for just one discipline?
-A: Yes. Brand only, product only, or infrastructure only. Scope expands when you are ready.
+A: Yes. Brand, product, or infrastructure on its own. Expand when you are ready.
 
 **Design Notes:**
 - Accordion: clean expand, no aggressive animation
@@ -170,10 +169,10 @@ A: Yes. Brand only, product only, or infrastructure only. Scope expands when you
 **Layout:** Full-width dark strip. Headline. One line. One button.
 
 **Headline:**
-Ready to build something that lasts?
+Build something that lasts.
 
 **Body:**
-Start with a free scoping session. No pitch deck, no commitment. Just a conversation.
+Start with a free scoping session. No pitch deck, no commitment, just a conversation.
 
 **CTA:** Book a Scoping Session
 
@@ -195,4 +194,3 @@ Start with a free scoping session. No pitch deck, no commitment. Just a conversa
 - No pricing mentioned anywhere.
 - No client logos or case studies on this page.
 - The work is referenced but not shown here. That lives on the main work page.
-

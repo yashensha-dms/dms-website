@@ -12,7 +12,7 @@ const FAQS: FAQItem[] = [
   {
     question: "Who works on my project?",
     answer:
-      "You work directly with the person building it. No outsourcing, no junior handoffs. The same senior team from brief to delivery.",
+      "The person building it. No outsourcing, no junior handoffs. The same senior team, from brief to delivery.",
   },
   {
     question: "Do you publish pricing?",
@@ -22,17 +22,17 @@ const FAQS: FAQItem[] = [
   {
     question: "How fast can we start?",
     answer:
-      "Most projects kick off within 10 business days of contract signing.",
+      "Most projects start within 10 business days of signing.",
   },
   {
     question: "Who owns the code and assets?",
     answer:
-      "You do. Full IP transfer on every engagement, no exceptions.",
+      "You do. Every engagement includes full IP transfer, without exception.",
   },
   {
     question: "Can we engage for just one discipline?",
     answer:
-      "Yes. Brand only, product only, or infrastructure only. Scope expands when you are ready.",
+      "Yes. Brand, product, or infrastructure on its own. Expand when you are ready.",
   },
 ];
 

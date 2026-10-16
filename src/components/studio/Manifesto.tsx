@@ -3,19 +3,7 @@
 import React from "react";
 import { motion } from "motion/react";
 
-const LEAD_WORDS = [
-  "Most",
-  "companies",
-  "juggle",
-  "three",
-  "vendors",
-  "to",
-  "do",
-  "what",
-  "one",
-  "studio",
-  "should.",
-];
+const LEAD_WORDS = ["Three", "vendors", "for", "one", "job."];
 
 export function Manifesto() {
   return (
@@ -52,31 +40,19 @@ export function Manifesto() {
             ))}
           </h2>
 
-          {/* Paragraph 2 */}
+          {/* Editorial Paragraph */}
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
+            transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
             viewport={{ once: true }}
             className="mt-10 text-base sm:text-lg md:text-xl font-normal leading-[1.65] text-slate-300 font-sans max-w-[680px]"
           >
-            A branding agency that never talks to the developer. A developer who
-            ignores the brand. A hosting setup nobody fully understands. Three
-            invoices, zero accountability, and a product that feels like it was
-            built by strangers.
-          </motion.p>
-
-          {/* Paragraph 3 */}
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.65, ease: "easeOut" }}
-            viewport={{ once: true }}
-            className="mt-8 text-base sm:text-lg md:text-xl font-normal leading-[1.65] text-slate-300 font-sans max-w-[680px]"
-          >
-            DMS Studio is the other kind. Brand systems, digital products, and
-            operations infrastructure under one roof. The same people from first
-            brief to final handoff.
+            Brand goes to one agency, code to another, hosting to a third.
+            Nobody sees the whole. Three invoices, no one accountable, and a
+            result that never quite fits together. DMS Studio works the other
+            way. Brand systems, digital products, and operations infrastructure,
+            made by one team from first brief to final handoff.
           </motion.p>
         </div>
       </div>

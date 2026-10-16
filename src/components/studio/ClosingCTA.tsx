@@ -27,13 +27,13 @@ export function ClosingCTA() {
         >
           {/* Display Headline */}
           <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-[-0.035em] leading-[1.05] text-white font-sans text-balance">
-            Ready to build something that lasts?
+            Build something that lasts.
           </h2>
 
           {/* Body */}
           <p className="mt-8 text-lg sm:text-xl font-normal leading-[1.65] text-slate-300 font-sans max-w-xl">
-            Start with a free scoping session. No pitch deck, no commitment.
-            Just a conversation.
+            Start with a free scoping session. No pitch deck, no commitment,
+            just a conversation.
           </p>
 
           {/* Single white button, dark text, forward arrow */}

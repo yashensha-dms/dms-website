@@ -21,9 +21,8 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
             className="mt-8 text-lg sm:text-xl md:text-2xl text-[#64748B] font-normal leading-[1.5] max-w-[640px] font-sans"
           >
-            We design brand systems, build digital products, and engineer the
-            infrastructure that runs your business. One team. One brief. One
-            outcome.
+            We design your brand system, build your digital product, and set up
+            the infrastructure beneath it. One team. One brief. One outcome.
           </motion.p>
 
           {/* Primary CTA: Fades in at 0.5s */}
